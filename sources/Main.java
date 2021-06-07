@@ -17,6 +17,7 @@ public class Main {
 	
 	
 	static void dfs(int idx, int[] sumArr, int sumCost){
+		if(sumCost >= result) return;
 		if(idx == N) return;
 		if(isCheck(sumArr)){
 			result = Math.min(sumCost, result);
